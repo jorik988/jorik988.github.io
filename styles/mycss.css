@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+
+body {
+    font-family: Merriweather, serif;
+    background: linear-gradient(180deg, #1a1a1a 56%, #424242 96%, #424242 100%);
+}
+p {
+    color: white;
+}
+
+.sidebar {
+    color: white;
+    background: linear-gradient(0deg, #1a1a1a 25%, #313131 96%, #424242 100%);
+}
+
+.btn-outline-primary {
+    background: linear-gradient(0deg, #1a1a1a 25%, #313131 96%, #424242 100%);
+    border-color: rgb(37, 37, 37);
+    color: rgb(255, 255, 255);
+}
+
+.slide-text,
+.footer-text {
+    color: white;
+    margin: auto auto;
+}
+
+footer {
+    
+    background: rgb(53, 53, 53);
+}
+.media-links {
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
+
+.nav-link svg,
+.media-links svg {
+    fill: white;
+}
+
+.call-anim {
+    animation: call-anim 2s ease 0s infinite normal forwards;
+}
+
+@keyframes call-anim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(-6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(-2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(1.2deg);
+	}
+}
+
+/* @media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+} */
